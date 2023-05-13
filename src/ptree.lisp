@@ -89,8 +89,7 @@
   (:report
    (lambda (err stream)
      (format stream
-             "Function arguments in `ptree' cannot contain lambda list ~
-              keywords.~%In definition of ~a found: ~{~s~^ ~}"
+             "Function arguments in `ptree' cannot contain lambda list ~%keywords.~%In definition of ~a found: ~{~s~^ ~}"
              (ptree-error-id err)
              (ptree-error-llks err))))
   (:documentation

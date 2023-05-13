@@ -235,6 +235,5 @@ inside `body'.")
     (when (search "/no-lock" name)
       (setf (documentation sym 'function)
             (format nil
-                    "Like `~a' but does not acquire the lock. ~
-                     Use inside~%`with-locked-queue'."
+                    "Like `~a' but does not acquire the lock. ~%Use inside~%`with-locked-queue'."
                     (subseq name 0 (position #\/ name :from-end t)))))))
