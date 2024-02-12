@@ -40,14 +40,16 @@
                    append (loop for symbol being the external-symbols in package
                                 collect (make-symbol (string symbol))))))))
   (package #:lparallel
-"This is a convenience package which exports the external symbols of:
+           "This is a convenience package which exports the external symbols of:
    lparallel.kernel
+   lparallel.kernel-util
    lparallel.promise
    lparallel.defpun
    lparallel.cognate
    lparallel.ptree"
-    #:lparallel.kernel
-    #:lparallel.promise
-    #:lparallel.defpun
-    #:lparallel.cognate
-    #:lparallel.ptree))
+           #:lparallel.kernel
+           #:lparallel.kernel-util
+           #:lparallel.promise
+           #:lparallel.defpun
+           #:lparallel.cognate
+           #:lparallel.ptree))
